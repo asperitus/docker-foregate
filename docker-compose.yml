@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  foregate:
+    image: asperitus/foregate
+    container_name: foregate
+    ports:
+      - "8080:8080"
+    networks:
+      - foregate-net
+
+networks:
+  foregate-net:
